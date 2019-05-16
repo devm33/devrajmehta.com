@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://devrajmehta.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Devraj Mehta Resume"
+disableKinds = ["taxonomy", "taxonomyTerm"]
