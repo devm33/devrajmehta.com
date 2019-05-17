@@ -50,34 +50,16 @@
 
     <table>
       <tr><td colspan=4><h4>Skills</h4></td></tr>
-      <tr title="Ordered by proficiency, strongest first.">
-        <td><i>Languages</i></td>
-        <td class="justify">
-          Javascript, Dart, CSS, SCSS, SQL, Java, Python, Bash, Scala, Go,
-          Clojure, MATLAB
-        </td>
-      </tr>
+      {{ range $k, $v := .Site.Data.skills }}
       <tr>
-        <td><i>Frameworks</i></td>
+        <td><i>{{$k}}</i></td>
         <td class="justify">
-          Angular, Material Design, React, jQuery, Apache, Django, Mongo, Mysql,
-          Lodash
+          {{- range $i, $e := $v -}}
+          {{if $i}},{{end}} {{$e}}
+          {{- end -}}
         </td>
       </tr>
-      <tr>
-        <td><i>Platforms</i></td>
-        <td class="justify">
-          Web, mWeb, Chrome Extension, Chromecast, iOS, tvOS, Android, Android
-          TV, Roku
-        </td>
-      </tr>
-      <tr>
-        <td><i>Tools</i></td>
-        <td class="justify">
-          Git, Perforce, SVN, FFmpeg, AppEngine, Vagrant, Gulp, Jira, Trac,
-          Travis, JMeter
-        </td>
-      </tr>
+      {{ end }}
     </table>
   </body>
 </html>
