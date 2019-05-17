@@ -32,11 +32,8 @@ tr.meta > td:not(:first-child) {
 tr.description > td {
   padding-bottom: 10px;
 }
-tr.description > td > ul {
-  list-style-type: none;
-  line-height: 1.3rem;
-}
 .justify {
+  text-align: justify;
   text-align-last: justify;
 }
 
