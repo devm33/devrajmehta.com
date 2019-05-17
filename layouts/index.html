@@ -1,9 +1,8 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <title>TODO</title>
-  </head>
-  <body>
-    TODO
-  </body>
-</html>
+<meta name="viewport" content="width=device-width initial-scale=1" />
+<meta name="description" content="{{ site.Title }}"/>
+<title>{{ site.Title }}</title>
+{{- with resources.Get "styles.css" | minify -}}
+<style>{{ .Content | safeCSS }}</style>
+{{- end -}}
+{{ .Content }}

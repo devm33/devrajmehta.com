@@ -1,0 +1,42 @@
+html, body, h1, h2, h4, ul, li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 512pt;
+  margin: 10px auto 100px auto;
+}
+@media print {
+  @page { margin: 0; }
+  body {
+    margin-bottom: 0;
+  }
+}
+h1 {
+  font-size: 1.2em;
+}
+h4 {
+  margin: 10px 0 5px 0;
+}
+.flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+table {
+  width: 100%;
+}
+tr.meta > td:not(:first-child) {
+  padding-left: 5px;
+}
+tr.description > td {
+  padding-bottom: 10px;
+}
+tr.description > td > ul {
+  list-style-type: none;
+  line-height: 1.3rem;
+}
+.justify {
+  text-align-last: justify;
+}
+
