@@ -2,7 +2,79 @@
 <meta name="viewport" content="width=device-width initial-scale=1" />
 <meta name="description" content="{{ site.Title }}"/>
 <title>{{ site.Title }}</title>
-{{- with resources.Get "styles.css" | minify -}}
+{{ with resources.Get "styles.css" | minify }}
 <style>{{ .Content | safeCSS }}</style>
-{{- end -}}
-{{ .Content }}
+{{ end }}
+
+<div class="flex">
+  <h1><a href="https://www.linkedin.com/in/devrajmehta">Devraj Mehta</a></h1>
+  <h4><a href="mailto:{{.Site.Params.email}}">{{.Site.Params.email}}</a></h4>
+</div>
+
+<table>
+
+  <tr><td colspan=4><h4>Work Experience</h4></td></tr>
+
+  {{ range $.Site.Data.jobs }}
+  <tr class="meta">
+    <td><a href="https://{{.uri}}">{{.name}}</a></td>
+    <td>{{.title}}</td>
+    <td><i>{{.location}}</i></td>
+    <td>
+      {{.start}}
+      {{ if .finish }}
+      &ndash; {{.finish}}
+      {{ end }}
+    </td>
+  </tr>
+  <tr class="description">
+    <td colspan="4">{{.description}}</td>
+  </tr>
+  {{ end }}
+
+  <tr><td colspan=4><h4>Education</h4></td></tr>
+  <tr class="meta">
+    <td><a href="https://gatech.edu">Georgia Institute of Technology</a></td>
+    <td colspan=2><i>B.S. Computer Science, Highest Honors</i></td>
+    <td>2010 &ndash; 2014</td>
+  </tr>
+  <tr class="meta">
+    <td colspan=3>
+      <a href="https://tjhsst.edu">
+        Thomas Jefferson High School for Science and Technology
+      </a>
+    </td>
+    <td>2006 &ndash; 2010</td>
+  </tr>
+</table>
+
+<table>
+  <tr><td colspan=4><h4>Skills</h4></td></tr>
+  <tr title="Ordered by proficiency, strongest first.">
+    <td><i>Languages</i></td>
+    <td class="justify">
+      Javascript, Dart, CSS, SCSS, SQL, Java, Python, Bash, Scala, Go,
+      Clojure, MATLAB
+    </td>
+  </tr>
+  <tr>
+    <td><i>Frameworks</i></td>
+    <td class="justify">
+      Angular, Material Design, React, jQuery, Apache, Django, Mongo, Mysql,
+      Lodash
+    </td>
+  </tr>
+  <tr>
+    <td><i>Platforms</i></td>
+    <td class="justify">
+      Web, mWeb, Chrome Extension, Chromecast, iOS, tvOS, Android, Android
+      TV, Roku
+    </td>
+    <tr>
+      <td><i>Tools</i></td>
+      <td class="justify">
+        Git, Perforce, SVN, FFmpeg, AppEngine, Vagrant, Gulp, Jira, Trac,
+        Travis, JMeter
+      </td>
+    </tr>
+  </table>

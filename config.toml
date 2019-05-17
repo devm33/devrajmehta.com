@@ -2,3 +2,5 @@ baseURL = "https://devrajmehta.com/"
 languageCode = "en-us"
 title = "Devraj Mehta Resume"
 disableKinds = ["taxonomy", "taxonomyTerm"]
+[params]
+  email = "dev@devrajmehta.com"
