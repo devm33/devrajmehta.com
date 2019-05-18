@@ -23,7 +23,7 @@
 - uri: https://gtri.gatech.edu
   name: Georgia Tech Research Insitute
   title: Research Scientist
-  location: Georgia Tech
+  location: Atlanta, GA
   start: 2014
   finish: 2015
   description: >
@@ -31,9 +31,9 @@
     applications that brought research efforts to real world usage.  Led
     development of deployed Angular application.
 - uri: https://cc.gatech.edu
-  name: College of Computing
+  name: Georgia Tech
   title: Teaching Assistant
-  location: Georgia Tech
+  location: Atlanta, GA
   start: Spring 2014
   finish: ""
   description: >
@@ -64,9 +64,9 @@
     that were self-driven, across the full stack, and by necessity on a
     fast-paced cycle.
 - uri: http://riesenhuberlab.neuro.georgetown.edu
-  name: MaxLab
+  name: Georgetown University
   title: CS Mentorship
-  location: Georgetown University
+  location: Washington, DC
   start: 2009
   finish: 2010
   description: >
@@ -74,9 +74,9 @@
     graphics processing units (GPU) to implement key operations integrated with
     MATLAB model.  Achieved a speed up of 12.5x.
 - uri: https://socialcomplexity.gmu.edu
-  name: Center for Social Complexity
+  name: George Mason University
   title: Software Developer Intern
-  location: George Mason University
+  location: Fairfax, VA
   start: Summer 2009
   finish: ""
   description: >

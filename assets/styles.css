@@ -16,6 +16,7 @@ body {
     display: none;
   }
 }
+
 h1 {
   font-size: 1.2em;
 }
@@ -35,6 +36,9 @@ tr.meta > td:not(:first-child) {
 }
 tr.description > td {
   padding-bottom: 10px;
+}
+td.right {
+  text-align: right;
 }
 .justify {
   text-align: justify;
