@@ -17,7 +17,7 @@
       <tr><td colspan=4><h4>Work Experience</h4></td></tr>
       {{ range $.Site.Data.jobs }}
       <tr class="meta">
-        <td><a href="https://{{.uri}}">{{.name}}</a></td>
+        <td><a href="{{.uri}}" target="_blank">{{.name}}</a></td>
         <td>{{.title}}</td>
         <td><i>{{.location}}</i></td>
         <td>
@@ -34,13 +34,15 @@
 
       <tr><td colspan=4><h4>Education</h4></td></tr>
       <tr class="meta">
-        <td><a href="https://gatech.edu">Georgia Institute of Technology</a></td>
+        <td><a href="https://gatech.edu" target="_blank">
+            Georgia Institute of Technology
+        </a></td>
         <td colspan=2><i>B.S. Computer Science, Highest Honors</i></td>
         <td>2010 &ndash; 2014</td>
       </tr>
       <tr class="meta">
         <td colspan=3>
-          <a href="https://tjhsst.edu">
+          <a href="https://tjhsst.edu" target="_blank">
             Thomas Jefferson High School for Science and Technology
           </a>
         </td>
