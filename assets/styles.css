@@ -36,4 +36,6 @@ tr.description > td {
   text-align: justify;
   text-align-last: justify;
 }
-
+a, a:visited {
+  color: #00E;
+}
